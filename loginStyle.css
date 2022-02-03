@@ -6,55 +6,84 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background-color: #ff85f9;
+    background-color: #FFDCF4;
 }
-.login {
-    width: 400px;
-    background-color: #ffffff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-    margin: 100px auto;
-}
-.login h1 {
+
+
+h1 {
     text-align: center;
     color: #5b6574;
     font-size: 24px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
 }
-.login form {
+
+h6 {
+    font-family: monospace;
+    font-weight: none;
+    text-align: center;
+    color: #5b6574;
+    padding: 0 0 20px 0;
+    margin: 0 0 0 0;
+}
+
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
 }
-.login form label {
+
+form label {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #d934d1;
+    background-color: #f701ce;
     color: #ffffff;
 }
-.login form input[type="password"], .login form input[type="text"] {
+
+form input[type="password"], form input[type="text"] {
     width: 310px;
     height: 50px;
     border: 1px solid #dee0e4;
     margin-bottom: 20px;
     padding: 0 15px;
 }
-.login form input[type="submit"] {
+
+form input[type="submit"], form input[type="button"]  {
     width: 100%;
     padding: 15px;
    margin-top: 20px;
-    background-color: #d934d1;
+    background-color: #f701ce;
     border: 0;
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
     transition: background-color 0.2s;
 }
-.login form input[type="submit"]:hover {
-  background-color: #fa41e1;
+
+form input[type="submit"]:hover, form input[type="button"]:hover {
+  background-color: #f179dd;
     transition: background-color 0.2s;
+}
+
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 150px;
+}
+
+.containerSignUp {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
 }
