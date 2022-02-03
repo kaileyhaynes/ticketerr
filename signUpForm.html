@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- signup form -->
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="loginStyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class = "containerSignUp">
+        <div class = "login">
+            <h1>Sign up</h1>
+            <h6> Only LU ITS employees are permitted to sign up and create an account with Ticketerr. </h6>
+            <form action = "signUp.php" method = "post">
+                <label for = "firstName">
+                    <i class = "fas fa-user-check"></i>
+                </label>
+                <input type = "text" name = "firstName" placeholder = "Your first name" id = "firstName" required>
+                
+                <label for = "lastName">
+                    <i class = "fas fa-signature"></i>
+                </label>
+                <input type = "text" name = "lastName" placeholder = "Your last name" id = "lastName" required>
+                
+                <label for = "email">
+                    <i class = "fas fa-mail-bulk"></i>
+                </label>
+                <input type = "text" name = "email" placeholder = "Your email" id = "email" required>
+
+                <label for = "username">
+                    <i class = "fas fa-user"></i>
+                </label>
+                <input type = "text" name = "username" placeholder = "Your username" id = "username" required>
+                
+                <label for = "password">
+                    <i class = "fas fa-lock"></i>
+                </label>
+                <input type = "text" name = "password" placeholder = "Your password" id = "password" required>
+                
+                <label for = "LNum">
+                    <i class = "fas fa-hashtag"></i>
+                </label>
+                <input type = "text" name = "LNum" placeholder = "L #" id = "LNum" required>
+                <a href = "index.html"> Not an LU ITS employee? Fill a work request instead. </a>
+                <input type = "submit" value  = "Sign Up">
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
