@@ -8,19 +8,41 @@
 		<link href="loginStyle.css" rel="stylesheet" type="text/css">
     </head>
 	<body>
-		<div class="login">
-			<h1>Login</h1>
-			<form action="authenticate.php" method="post">
-				<label for="username">
-					<i class="fas fa-user"></i>
-				</label>
-				<input type="text" name="username" placeholder="Username" id="username" required>
-				<label for="password">
-					<i class="fas fa-lock"></i>
-				</label>
-				<input type="password" name="password" placeholder="Password" id="password" required>
-				<input type="submit" value="Login">
-			</form>
+		<!--form for EXTERNAL users-->
+		<div class="container">
+			<div class="login">
+				<h1> Request assistance </h1>
+				<form action="requestForm.php" method = "post">
+					<h6>Are you a LU student, faculty, or staff member in need of assistance?</h6>
+					<input type="button" onclick="requestButton()" value="Enter form">
+				</form>
+			</div>
+
+			<!--login for INTERNAL users-->
+			<div class="login">
+					<h1>Login</h1>
+					<!-- <h6>Are you a LU ITS student or staff worker?</h6>-->
+					<form action="authenticate.php" method="post">
+						<label for="username">
+							<i class="fas fa-user"></i>
+						</label>
+						<input type="text" name="username" placeholder="Username" id="username" required>
+						<label for="password">
+							<i class="fas fa-lock"></i>
+						</label>
+						<input type="password" name="password" placeholder="Password" id="password" required>
+						<!-- need to link to a pop up form or new page; signUpForm.html -->
+						<a href = "signUpForm.html"> Don't have an account? Sign up here! </a>
+						<input type="submit" value="Sign in">
+					</form>
+			</div>
 		</div>
+
+		<!-- redirect to request form OR pop up ad -->
+		<script>
+			function requestButton() {
+				alert("Bam, request form bb");
+			}
+		</script>
 	</body>
 </html>
