@@ -1,3 +1,5 @@
+
+<?php echo file_get_contents("navleft.html"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,7 +19,7 @@
 					<input type="button" onclick="requestButton()" value="Enter form">
 				</form>
 			</div>
-
+			<a href="testpage.php"> Try dynamic pages</a>
 			<!--login for INTERNAL users-->
 			<div class="login">
 					<h1>Login</h1>
